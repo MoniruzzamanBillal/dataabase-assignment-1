@@ -31,10 +31,10 @@
               <li class="cursor-pointer">Home</li>
               <li class="cursor-pointer">About</li>
               <li class="cursor-pointer">Department</li>
-              <li class="cursor-pointer relative group">
+              <li class="cursor-pointer relative group z-[30]">
                 <a>Contact</a>
                 <ul
-                  class="bg-gray-300 absolute top-[1.8rem] right-0 hidden group-hover:flex flex-col justify-center items-center w-[10rem] py-2"
+                  class="bg-gray-300 z-[30] absolute top-[1.8rem] right-0 hidden group-hover:flex flex-col justify-center items-center w-[10rem] py-2"
                 >
                   <li
                     class="hover:bg-gray-400 hover:w-full hover:text-center py-2"
@@ -65,7 +65,7 @@
       <!-- body section starts  -->
 
       <div
-        class="mainBodyWrapper bg-red-400 py-2 w-[95%] m-auto flex justify-between"
+        class="mainBodyWrapper py-4 w-[95%] m-auto flex justify-between z-[10]"
       >
         <!-- main page left section starts  -->
 
@@ -108,9 +108,9 @@
 
         <!-- main page right section starts  -->
 
-        <div class="mainRight bg-sky-300 w-[54%]">
+        <div class="mainRight w-[50%] -z-[1]">
           <!-- right section table  -->
-          <div class="tableSection bg-yellow-400">
+          <div class="tableSection">
             <div class="relative overflow-x-auto">
               <table
                 class="w-full text-sm text-gray-50 bg-red-500 border border-gray-600"
@@ -149,6 +149,16 @@
             </div>
           </div>
           <!-- right section table  -->
+
+          <!-- right section list  -->
+          <div class="rightList mt-10">
+            <ol class="text-lg list-decimal list-inside">
+              <li>list 1</li>
+              <li>list 2</li>
+              <li>list 3</li>
+            </ol>
+          </div>
+          <!-- right section list ends  -->
         </div>
 
         <!-- main page right section ends -->
