@@ -2,12 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind file  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- linking css  -->
+    <link rel="stylesheet" href="style.css" />
+
     <title>Noob Monir</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="mainContainer">
+      <!-- navbar starts  -->
+      <div class="navContainer">
+        <div
+          class="navWrapper bg-blue-300 w-[90%] m-auto py-2 px-3 flex justify-between items-center"
+        >
+          <!-- {/* nav left strts  */} -->
+          <div class="navLeft">
+            <h1 class="font-bold text-2xl">Noob Monir</h1>
+          </div>
+          <!-- {/* nav left ends */} -->
+
+          <!-- {/* nav right starts  */} -->
+          <div class="navRight text-lg font-medium">
+            <ul class="flex justify-between items-center gap-x-5">
+              <li class="cursor-pointer">Home</li>
+              <li class="cursor-pointer">About</li>
+              <li class="cursor-pointer">Department</li>
+              <li class="cursor-pointer relative group">
+                <a>Contact</a>
+                <ul
+                  class="bg-gray-300 absolute top-[1.8rem] right-0 hidden group-hover:flex flex-col justify-center items-center w-[10rem] py-2"
+                >
+                  <li
+                    class="hover:bg-gray-400 hover:w-full hover:text-center py-2"
+                  >
+                    Submenu 1
+                  </li>
+                  <li
+                    class="hover:bg-gray-400 hover:w-full hover:text-center py-2"
+                  >
+                    Submenu 2
+                  </li>
+                  <li
+                    class="hover:bg-gray-400 hover:w-full hover:text-center py-2"
+                  >
+                    Submenu 3
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- {/* nav right ends */} -->
+
+          <!-- {/*  */} -->
+        </div>
+      </div>
+      <!-- navbar ends -->
+    </div>
   </body>
 </html>
