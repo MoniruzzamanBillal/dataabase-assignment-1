@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind file  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- linking css  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Noob Monir</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <!--  -->
+
+      <!-- login form starts  -->
+      <div class="py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <h2
+            class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl"
+          >
+            Login
+          </h2>
+
+          <form
+            class="mx-auto max-w-lg rounded-lg border bg-gray-100 shadow-lg"
+          >
+            <div class="flex flex-col gap-4 p-4 md:p-8">
+              <div>
+                <label
+                  for="id"
+                  class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-medium"
+                  >Student Id :
+                </label>
+                <input
+                  name="id"
+                  id="id"
+                  type="number"
+                  class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="password"
+                  class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-medium"
+                  >Password</label
+                >
+                <input
+                  name="password"
+                  id="password"
+                  type="password"
+                  class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                />
+              </div>
+
+              <button
+                class="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base"
+              >
+                Log in
+              </button>
+            </div>
+
+            <div class="flex items-center justify-center bg-gray-200 p-4">
+              <p class="text-center text-sm text-gray-500">
+                Don't have an account?
+                <a
+                  href="#"
+                  class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
+                  >Register</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- login form ends -->
+
+      <!--  -->
+
+      <!-- REGISTER FORM starts  -->
+
+      <div class="py-6 sm:py-8 lg:py-12 mt-3">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <h2
+            class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl"
+          >
+            Register
+          </h2>
+
+          <form
+            class="mx-auto max-w-lg rounded-lg border bg-gray-100 shadow-lg"
+          >
+            <div class="flex flex-col gap-4 p-4 md:p-8">
+              <!-- student name input starts  -->
+              <div>
+                <label
+                  for="name"
+                  class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-medium"
+                  >Name
+                </label>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                />
+              </div>
+              <!-- student name input ends  -->
+
+              <!-- email input starts  -->
+              <div>
+                <label
+                  for="email"
+                  class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-medium"
+                  >Email
+                </label>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                />
+              </div>
+              <!-- email input ends -->
+
+              <!-- student id input starts  -->
+              <div>
+                <label
+                  for="id2"
+                  class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-medium"
+                  >Student Id :
+                </label>
+                <input
+                  name="id"
+                  id="id2"
+                  type="number"
+                  class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                />
+              </div>
+              <!-- student id input Ends   -->
+
+              <!-- phone input starts  -->
+              <div>
+                <label
+                  for="phone"
+                  class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-medium"
+                  >Phone
+                </label>
+                <input
+                  name="phone"
+                  id="phone"
+                  type="number"
+                  class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                />
+              </div>
+              <!-- phone input ends -->
+              <!-- password input  -->
+              <div>
+                <label
+                  for="password"
+                  class="mb-2 inline-block text-sm text-gray-800 sm:text-base font-medium"
+                  >Password</label
+                >
+                <input
+                  name="password"
+                  type="password"
+                  class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                />
+              </div>
+              <!-- password input  -->
+
+              <button
+                class="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- REGISTER FORM ends  -->
+
+      <!--  -->
+    </div>
+  </body>
+</html>
